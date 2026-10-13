@@ -1,0 +1,847 @@
+
+   :root {
+  --primary-blue: #2d3591;
+  --primary-dark: #1b2061;
+  --whatsapp-green: #25d366;
+  --whatsapp-hover: #1ebd56;
+  --bg-light: #f8f9fa;
+  --card-bg: #ffffff;
+  --text-dark: #2c3e50;
+  --text-muted: #6c757d;
+  --border-radius: 8px;
+
+}
+* {
+    font-family: "Times New Roman", Times, serif !important;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "DIN Next";
+    src: url("47a16be9-490c-4c2b-8c08-2f69f6f10a8b.woff2");
+}
+.localizacao {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.endereco {
+    min-height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background: white;
+    border-top: 5px solid #303394;
+}
+
+.endereco h2 {
+    margin: 10px 0 20px;
+
+    font-family: "Courier New", monospace;
+    font-size: 38px;
+    line-height: 1.3;
+
+    color: #303394;
+}
+
+.botoes-endereco {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px 18px;
+
+    color: #303394;
+    background: white;
+
+    border: 2px solid #303394;
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.botao img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.botao:hover {
+    background: #303394;
+    color: white;
+}
+
+.mapa {
+    width: 100%;
+    height: 440px;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.endereco {
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+
+    font-family: "DIN Next", sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.4;
+
+    color: #303394;
+    background: white;
+    border-top: 5px solid #303394;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  color: var(--text-dark);
+  line-height: 1.6;
+ text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-blue);
+
+}
+
+.header {
+    width: 100%;
+    height: 98px;
+    background-color: #303394;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* CONTAINER PRINCIPAL */
+
+.nav-container {
+    width: 850px;
+    height: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 0;
+}
+
+
+/* LOGO */
+
+.nav-container > img {
+    width: 115px;
+    height: auto;
+
+    margin-right: 65px;
+
+    flex-shrink: 0;
+}
+
+
+/* MENU */
+
+.nav-menu {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+
+    gap: 39px;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* LINKS */
+
+/* TEXTOS DA NAVEGAÇÃO */
+
+.nav-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+
+    font-family: "DIN Next", serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+}
+
+.nav-link:hover {
+    color: #ffe2ad;
+}
+
+
+/* BOTÕES */
+
+.hero-buttons {
+    display: flex;
+
+    margin-left: 30px;
+
+    gap: 6px;
+}
+
+
+/* RESERVAS E CARDÁPIO */
+
+.btn {
+    width: 138px;
+    height: 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(255, 255, 255);
+    color: #303394;
+
+    text-decoration: none;
+    font-family: "DIN Next", serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -0.3px;
+
+    border: none;
+    border-radius: 0;
+}
+
+
+/* HOVER */
+.hero-titulo {
+    font-family: "DIN Next", Georgia, serif;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.25;
+
+    color: #303394;
+    text-align: center;
+
+    max-width: 900px;
+    margin: 35px auto 60px;
+}
+
+.btn:hover {
+    background-color: #ffe2ad;
+    color: #303394;
+}
+
+.reservas {
+    text-align: center;
+    padding: 70px 20px;
+    background-color: white;
+}
+
+.btn-reserva {
+    display: inline-block;
+
+    background-color: #303394;
+    color: rgb(255, 255, 255);
+
+    padding: 12px 40px;
+
+    text-decoration: none;
+    font-family: "DIN Next", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.reservas p {
+    margin-top: 12px;
+
+    color: #303394;
+    font-family: "DIN Next", sans-serif;
+    font-size: 18px;
+}
+
+
+.hero-banner img {
+  max-width: 1800px; 
+  width: 100%;
+  height: 10%;
+  object-fit: cover;  
+  margin: 0 auto;   
+}
+.hero-banner {
+  margin-top: 50px;}
+
+
+.reservas {
+    width: 100%;
+    text-align: center;
+    padding: 70px 20px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.btn-reserva {
+    display: inline-block;
+    background-color: #2d3591;
+    color: white;
+    text-decoration: none;
+
+    padding: 15px 45px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.reservas p {
+    margin: 0;
+    color: #2d3591;
+    font-size: 16px;
+}
+
+.reservas :hover{
+  color: #2d3591;
+ background-color: #ffe2ad;
+
+}
+
+/* Títulos com a fonte serifada elegante */
+h1, h2, h3, .quem-somos-card h2 {
+  
+  font-weight: 700;
+}
+
+
+.quem-somos-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.quem-somos-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: stretch;
+}
+
+/* DUAS IMAGENS À ESQUERDA */
+.quem-somos-imagens {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.quem-somos-imagens img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* CARD AZUL À DIREITA */
+.quem-somos-card {
+    background-color: #2d3591;
+    color: white;
+font-family: Georgia, "Times New Roman", serif;
+    padding: 50px 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+.quem-somos-card h2 {
+    color: white;
+    font-size: 28px;
+    margin: 0 0 25px 0;
+    text-align: left;
+}
+
+.quem-somos-card p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 22px 0;
+    text-align: left;
+}
+
+.quem-somos-card p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+.contato-section {
+    width: 100%;
+    background-color: white;
+    padding: 50px 8% 70px;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.contato-container {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 100px;
+
+    align-items: start;
+}
+
+
+/* IMAGEM */
+
+.contato-imagem h2 {
+    color: #303394;
+    font-family: "DIN Next", sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+.contato-imagem img {
+    width: 100%;
+    max-width: 600px;
+    height: 330px;
+
+    object-fit: cover;
+
+    border: 5px solid #000;
+    display: block;
+}
+
+
+/* INFORMAÇÕES */
+
+.contato-info {
+    color: #303394;
+}
+
+.contato-info h2 {
+    color: #303394;
+    font-family: "DIN Next", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+
+    line-height: 1.15;
+
+    margin: 0 0 25px;
+}
+
+
+/* WHATSAPP */
+
+.whatsapp {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #303394;
+    text-decoration: none;
+
+    font-family: "DIN Next", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+
+    margin: 20px 0 45px;
+}
+
+.whatsapp:hover {
+    color: #5c62ba;
+}
+
+.whatsapp-icon {
+    max-width: 100%;
+    width: 40px;
+}
+
+
+/* FUNCIONAMENTO */
+
+.funcionamento-titulo {
+    margin-bottom: 20px !important;
+}
+
+.horarios p {
+    color: #303394;
+
+    font-family: "DIN Next", sans-serif;
+    font-size: 22px;
+
+    margin: 7px 0;
+}
+
+.horarios strong {
+    font-weight: bold;
+}
+
+.horarios span {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 850px) {
+
+    .contato-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .contato-imagem img {
+        max-width: 100%;
+        height: 300px;
+        font-family: Georgia, "Times New Roman", serif;
+    }
+
+
+    .contato-info h2 {
+        font-size: 22px;
+        font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .whatsapp {
+        font-size: 25px;
+        font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .horarios p {
+       font-family: Georgia, "Times New Roman", serif;
+        font-size: 19px;
+    }
+
+}
+
+
+
+@media (max-width: 850px) {
+  .quem-somos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quem-somos-card {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .quem-somos-imagens {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+footer {
+ font-family: Georgia, "Times New Roman", serif;
+    width: 100%;
+    height: 450px;
+    background-color: #303394;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0;
+}
+
+/* LOGO DO CASARÃO */
+
+.roda-pe1 {
+    width: 115%;
+    font-family: Georgia, "Times New Roman", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 25px;
+}
+
+.roda-pe1 img {
+    width: 120px;
+    height: 110px;
+    object-fit: contain;
+}
+
+
+/* LOGO IDEER */
+
+.roda-pe2 { 
+    width: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 190px;
+}
+
+.roda-pe2 img {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* TEXTO DO RODAPÉ */
+
+footer > p {
+    font-family: Georgia, "Times New Roman", serif;
+    margin-top: 10px;
+
+    color: white;
+    font-family: "DIN Next", sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 8px;
+}
+
+
+.fotos-section {
+    font-family: Georgia, "Times New Roman", serif;
+    width: 100%;
+    background-color: #303394;
+    padding-top: 45px;
+    padding-bottom: 95px;
+    overflow: hidden;
+    box-shadow: #000;
+}
+
+
+/* TÍTULO */
+
+.fotos-section h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: white;
+    text-align: center;
+
+    font-family: "DIN Next", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+
+    margin-bottom: 40px;
+}
+
+
+/* GALERIA */
+
+.fotos-galeria {
+    width: 100%;
+
+    display: flex;
+    gap: 10px;
+
+    overflow: hidden;
+    box-shadow: #000;
+}
+
+
+.fotos-galeria img {
+    width: 216px;
+    height: 325px;
+
+    flex-shrink: 0;
+
+    object-fit: cover;
+
+    display: block;
+    box-shadow: #000;
+}
+
+
+/* BOTÃO */
+
+.botao-cardapio {
+    font-family: Georgia, "Times New Roman", serif;
+    display: block;
+
+    width: 257px;
+
+    margin: 85px auto 0;
+
+    padding: 10px 2px;
+
+    background-color: white;
+    color: #303394;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-family: "DIN Next", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.botao-cardapio:hover {
+    background-color: #ffe2ad;
+}
+
+
+.botoes-localizacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 20px 80px;
+    background-color: white;
+}
+
+.botao-localizacao {
+    width: 256px;
+    padding: 13px 20px;
+
+    background-color: #303394;
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-family: "DIN Next", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* espaço entre os dois botões */
+.botao-localizacao:first-child {
+    margin-right: 20px;
+}
+
+.instagram-section {
+    width: 100%;
+    background-color: #30328f;
+    padding-top: 36px;
+    padding-bottom: 25px;
+    overflow: hidden;
+}
+
+/* TÍTULO */
+.instagram-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 30px;
+}
+
+/* Ajustar a imagem */
+.instagram-titulo img {
+    display: block;
+    max-width: 100%;
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.instagram-titulo h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    margin: 0;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.instagram-titulo p {
+    font-family: Georgia, "Times New Roman", serif;
+    margin: 2px 0 0;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* FILEIRA DE FOTOS */
+
+.instagram-feed {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.instagram-feed a {
+    flex: 0 0 calc(14.28% - 5px);
+    height: 280px;
+    display: block;
+    overflow: hidden;
+}
+
+.instagram-feed video {
+  height: 211px; /* Altere este valor para a altura desejada */
+  width: 211px auto;
+  display: flex;
+}
+
+.instagram-feed img {
+    width: 211px;
+    height: 211px;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.instagram-feed a:hover img {
+    transform: scale(1.06);
+}
